@@ -1,0 +1,13 @@
+﻿@page
+@inject IStringLocalizer<IndexModel> localizer
+@inject IHtmlLocalizer<IndexModel> htmlLocalizer
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@localizer["Welcome"]</h1>
+    <p>@htmlLocalizer["Learn"]</p>
+    <h3>@ViewData["Message"]</h3>
+</div>
